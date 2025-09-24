@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import New, { DemoNewTable } from './components/New';
 
 // PUBLIC_INTERFACE
 function App() {
@@ -41,6 +42,12 @@ function App() {
         >
           Learn React
         </a>
+
+        <div style={{ width: '100%', maxWidth: 1200, marginTop: 24 }}>
+          <h2 style={{ fontSize: 20, marginBottom: 8 }}>Issues Table Preview</h2>
+          {/* Demo component provides default sample data; in a real app pass issues via props */}
+          <DemoNewTable />
+        </div>
       </header>
     </div>
   );
